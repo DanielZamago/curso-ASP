@@ -44,6 +44,7 @@ namespace IntroASP.Controllers
                     string json = JsonConvert.SerializeObject(beer);
                     Console.Write(json);
 
+
                     _context.Add(beer);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
